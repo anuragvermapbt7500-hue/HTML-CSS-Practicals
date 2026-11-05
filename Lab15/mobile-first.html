@@ -1,0 +1,24 @@
+<!-- Name: Anurag Verma | Roll No: 2010303123 | Assignment 15 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile First</title>
+<style>
+/* Base styles for phones: cards stack */
+.card { border: 2px solid #1d3557; border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+/* 600px and up: cards side by side */
+@media (min-width: 600px) {
+  .cards { display: flex; gap: 12px; }
+  .card { flex: 1; margin-bottom: 0; }
+}
+</style>
+</head>
+<body>
+<div class="cards">
+  <div class="card"><h2>Card One</h2><p>This is the first card.</p></div>
+  <div class="card"><h2>Card Two</h2><p>This is the second card.</p></div>
+</div>
+</body>
+</html>
